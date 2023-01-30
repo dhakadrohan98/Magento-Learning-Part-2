@@ -1,0 +1,11 @@
+type Mutation {
+    createCustomerV2(
+        customer_number: String! @doc(description: "The customer number.")
+    ): CustomerOutput
+    @resolver(class:"\\Sigma\\CreateCustomerAccountGraphQl\\Model\\Resolver\\CreateCustomer")
+    @doc(description:"Create customer account")
+}
+
+type CustomerOutput {
+    customer_number: String @doc(description: "The customer number.")
+}

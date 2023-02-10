@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Devhooks_HelloWorld::helloworld" title="Vendor" module="Devhooks_HelloWorld" sortOrder="10"
+             resource="Devhooks_HelloWorld::helloworld"/>
+        <add id="Devhooks_HelloWorld::grid" title="Manage Grid" module="Devhooks_HelloWorld" sortOrder="10"
+             action="helloworld/index/index" resource="Devhooks_HelloWorld::grid" parent="Devhooks_HelloWorld::helloworld"/>
+    </menu>
+</config>
